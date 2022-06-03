@@ -20,7 +20,7 @@ $file = "
 ";
 
 
-$to = "tenorioyan11@gmail.com";
+$to = "hidelit11@gmail.com";
 
 $headers = "From: $name <$email>";
 
