@@ -28,4 +28,8 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 $headers[] = "From: $name <$email>";
 
 
-mail($to, $subject, $msg, implode("\r\n", $headers));
+if(mail($to, $subject, $msg, implode("\r\n", $headers))){
+    echo "Message accepted";
+} else {
+    echo "Error: Message not accepted";
+}
