@@ -22,13 +22,10 @@ $file = "
 
 $to = "tenorioyan11@gmail.com";
 
-
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=iso-8859-1';
-$headers[] = "From: $name <$email>";
+$headers = "From: $name <$email>";
 
 
-if(mail($to, $subject, $msg, implode("\r\n", $headers))){
+if(mail($to, $subject, $msg, $headers)){
     echo "Message accepted";
 } else {
     echo "Error: Message not accepted";
