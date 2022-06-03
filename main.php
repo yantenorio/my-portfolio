@@ -28,10 +28,4 @@ $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 $headers[] = "From: $name <$email>";
 
 
-$success = mail($to, $subject, $msg, implode("\r\n", $headers));
-
-if (!$success) {
-    $errorMessage = error_get_last()['message'];
-} else {
-    header('location: index.php');
-}
+mail($to, $subject, $msg, implode("\r\n", $headers));
