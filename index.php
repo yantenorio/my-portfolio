@@ -147,7 +147,7 @@
                 <div class="form-group">
                     <label for="inputSubject">Subject</label>
                     <input type="text" class="form-control" id="inputSubject" name="subject"
-                        placeholder="I wish a freelance">
+                        placeholder="I wanna say hi">
                 </div>
 
                 <div class="form-group">
